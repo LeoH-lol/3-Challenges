@@ -23,7 +23,7 @@
 			display: block;
 			color: white;
 			text-align: center;
-			padding: 14px 36.1px;
+			padding: 14px 49.2px;
 			text-decoration: none;
 			}
 
@@ -59,6 +59,44 @@
 			background-attachment: fixed;
 			background-position: center;
 			}
+			li a, .dropbtn {
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 14px 49.2px;
+			text-decoration: none;
+			}
+
+			li a:hover, .dropdown:hover .dropbtn {
+			background-color: red;
+			}
+
+			li.dropdown {
+			display: inline-block;
+			}
+
+			.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+
+			.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+ 
+			}
+
+			.dropdown-content a:hover {background-color: #f1f1f1;}
+
+			.dropdown:hover .dropdown-content {
+			display: block;
+			}
 			
 	
 	</style>
@@ -72,10 +110,18 @@
 			<ul>
 			  <li><a href="Gameplay.html">Gameplay</a></li>
 			  <li><a href="Development.html">Release</a></li>
-			  <li><a class="current"href="Competition.html">Professional Competition</a></li>
+<li class="dropdown">
+    <a href="competition.html" class="dropbtn">Competition</a>
+    <div class="dropdown-content">
+      <a href="https://www.astralis.gg/">Astralis</a>
+      <a href="https://www.teamliquid.com/">Liquid</a>
+      <a href="https://www.cloud9.gg/">Cloud 9</a>
+    </div>
+  </li>
 			  <li><a href="Reception.html">Reception</a></li>
 			</ul>
 	<div class="content">
+	<h1>Here are some history of the CS:GO professional competitions</h1>
 	<p>The Global Offensive professional scene consists of tournaments hosted by third-party organisations and Valve-organised or co-sponsored tournaments, referred to as Majors. Majors have larger prize pools; originally set at $250,000, the prize pools for majors have risen, with MLG Columbus 2016 having the first pool of $1,000,000.
 
 In 2014, the "first large match fixing scandal" in the Global Offensive community took place, where team iBuyPower purposefully lost a match against NetCodeGuides.com. The team was later banned by Valve, though ESL unbanned the team from their tournaments in 2017. They are still unable to play in Majors.
